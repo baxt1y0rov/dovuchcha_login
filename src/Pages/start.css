@@ -1,0 +1,61 @@
+::placeholder{
+    font-weight: 400;
+    color: #C5C7C5;
+    
+}
+.inputemail{
+    height: 40px;
+    margin-bottom: 0;
+    transition: 0.2s;
+    font-size: 15px;
+}
+.inputemail:focus{
+    box-shadow:inset 0px 0px 0px 0.1px #97CC68 !important;
+    border-color: #97CC68 !important;
+  }
+.inputemail:hover{
+    border-color: #C5C7C5;
+  }
+.forgotem{
+    font-size:15px;
+    font-weight: bold;
+    transition: 0.2s;
+    border-radius: 5px;
+}
+.forgotem:hover{
+    background-color: #aed98b19 !important;
+}
+.card{
+    border-radius: 40px;
+}
+.signintext{
+font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+.learnmore:hover{
+    text-decoration: underline !important;
+}
+.button{
+    transition: 0.2s;
+}
+.button:hover{
+    background-color: #AED98B !important;
+}
+.crtacc{
+    background-color: transparent;
+    border:none;
+    height: 40px !important;
+    border-radius: 20px !important;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: 0.2s !important;
+    background-color: #aed98b19 !important;
+    cursor: pointer;
+    
+}
+.crtacc:hover{
+    background-color: #aed98b30 !important;
+   
+}
