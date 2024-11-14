@@ -1,5 +1,5 @@
 import React from 'react';
-import './start.css'
+import './Signin.css'
 import { borderColor, fontSize, fontWeight, padding } from '@mui/system';
 
 const DovuchchaLogo = () => (
@@ -79,7 +79,7 @@ const selectStyle = {
   fontSize:'0.75rem',
 };
 
-export default function GoogleSignIn() {
+export default function DovuchchaNameAsk() {
   return (
     <div style={containerStyle}>
       <div style={cardStyle}className='card'>
@@ -97,15 +97,7 @@ export default function GoogleSignIn() {
             type="email"
           />
         </div>
-        <div style={{marginBottom: 40,marginTop:8}}>
-          <a href="#" style={linkStyle} className='forgotem'>Forgot email?</a>
-        </div>
-        <div style={{marginBottom: 80, fontSize: '0.875rem', color: '#e8eaed'}}>
-          Not your computer? Use Guest mode to sign in privately.{' '}
-          <a href="#" className='learnmore' style={linkStyle}>Learn more about using Guest mode</a>
-        </div>
         <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
-          <button className='crtacc'><a href="#" style={link2Style}>Create account</a></button>
           <button className='button' style={buttonStyle}>Next</button>
         </div>
       </div>
