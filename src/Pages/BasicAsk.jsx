@@ -1,6 +1,6 @@
 import React from 'react';
 import './Signin.css'
-import { borderColor, fontSize, fontWeight, height, padding } from '@mui/system';
+import { borderColor, fontSize, fontWeight, padding } from '@mui/system';
 import { Link } from 'react-router-dom';
 
 const DovuchchaLogo = () => (
@@ -62,17 +62,17 @@ const link2Style = {
   };
 
   const buttonStyle = {
-  backgroundColor: '#96CD68',
-  color: '#223b0e',
-  padding: '0.5rem 1.5rem',
-  borderRadius: '20px',
-  border: 'none',
-  height:23,
-  cursor: 'pointer',
-  fontWeight:400,
-  textDecoration:'none',
-  fontSize:14,
-};
+    backgroundColor: '#96CD68',
+    color: '#223b0e',
+    padding: '0.5rem 1.5rem',
+    borderRadius: '20px',
+    border: 'none',
+    height:23,
+    cursor: 'pointer',
+    fontWeight:400,
+    textDecoration:'none',
+    fontSize:14,
+  };
 
 const footerStyle = {
   width: '100%',
@@ -93,7 +93,7 @@ const selectStyle = {
   fontSize:'0.75rem',
 };
 
-export default function DovuchchaNameAsk() {
+export default function BasicAsk() {
   return (
     <div style={containerStyle}>
       <div style={cardStyle}className='card'>
@@ -101,24 +101,24 @@ export default function DovuchchaNameAsk() {
           <DovuchchaLogo />
         </div>  
         <div style={{marginBottom: '1.5rem'}}>
-          <h1 className='signintext'style={{fontSize: '2em', color: 'white', marginBottom:0}}>Create a Dovuchcha Account</h1>
-          <p style={{fontSize: '1rem', fontWeight:400,color: '#E5F4D8',marginBlockEnd:40}}>Enter your name</p>
+          <h1 className='signintext'style={{fontSize: '2em', color: 'white', marginBottom:0}}>Basic information</h1>
+          <p style={{fontSize: '1rem', fontWeight:400,color: '#E5F4D8',marginBlockEnd:40}}>Enter your birthday and gender</p>
         </div>
         <div style={{marginInlineEnd:25}}>
           <input className='inputemail'
             style={inputStyle}
-            placeholder="First name"
-            type="name"
+            placeholder="Birthday dd/mm/yy"
+            type="date"
           />
           <input className='inputemail'
             style={input2Style}
-            placeholder="Last name (optional)"
-            type="name"
+            placeholder="Gender"
+            type="gender"
           />
         </div>
         <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
           <div className="filler"></div>
-          <Link className='button' to='/BasicAsk' style={buttonStyle}>Next</Link>
+          <Link className='button' to='/EmailAsk' style={buttonStyle}>Next</Link>
         </div>
       </div>
       <div style={footerStyle}>

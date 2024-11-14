@@ -1,7 +1,6 @@
 import React from 'react';
 import './Signin.css'
 import { borderColor, fontSize, fontWeight, padding } from '@mui/system';
-import DovuchchaNameAsk from './Signin';
 import { Link } from 'react-router-dom';
 
 const DovuchchaLogo = () => (
