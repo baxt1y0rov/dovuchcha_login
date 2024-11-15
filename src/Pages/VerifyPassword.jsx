@@ -1,6 +1,6 @@
 import React from 'react';
 import './Signin.css'
-import { borderColor, fontSize, fontWeight, margin, padding } from '@mui/system';
+import { borderColor, fontSize, fontWeight, padding } from '@mui/system';
 import { Link } from 'react-router-dom';
 
 const DovuchchaLogo = () => (
@@ -15,8 +15,6 @@ const containerStyle = {
   justifyContent: 'center',
   padding:0,
   flexDirection: 'column',
-  marginRight:40,
-  marginLeft:40,
 };
 
 const cardStyle = {
@@ -37,6 +35,17 @@ const inputStyle = {
   color: 'white',
   outline: 'none',
 };
+const input2Style = {
+    width: '100%',
+    backgroundColor: 'transparent',
+    border: '1px solid #8F918F',
+    borderRadius: '10px',
+    padding: '0.5rem 0.75rem',
+    color: 'white',
+    outline: 'none',
+    marginTop:25,
+    marginBottom:80,
+  };
 
 
 const linkStyle = {
@@ -84,7 +93,7 @@ const selectStyle = {
   fontSize:'0.75rem',
 };
 
-export default function DovuchchaSignIn() {
+export default function VerifyPassword() {
   return (
     <div style={containerStyle}>
       <div style={cardStyle}className='card'>
@@ -92,26 +101,20 @@ export default function DovuchchaSignIn() {
           <DovuchchaLogo />
         </div>  
         <div style={{marginBottom: '1.5rem'}}>
-          <h1 className='signintext'style={{fontSize: '2em', color: 'white', marginBottom: 1}}>Sign in</h1>
-          <p style={{fontSize: '1rem', fontWeight:400,color: '#E5F4D8',marginBlockEnd:40}}>Use your Dovuchcha Account</p>
+          <h1 className='signintext'style={{fontSize: '2em', color: 'white', marginBottom:0}}>Welcome</h1>
+          <p style={{fontSize: '1rem', fontWeight:400,color: '#E5F4D8',marginBlockEnd:40}}><a href="mailto:example@dovuchcha.uz" type='email' style={linkStyle}>example@dovuchcha.uz</a>
+          </p>
         </div>
-        <div style={{marginInlineEnd:25}}>
+        <div style={{marginInlineEnd:25,marginBottom:100}}>
           <input className='inputemail'
             style={inputStyle}
-            placeholder="Email or phone"
-            type="email"
+            placeholder="Password"
+            type="password"
           />
         </div>
-        <div style={{marginBottom: 40,marginTop:8}}>
-          <a href="#" style={linkStyle} className='forgotem'>Forgot email?</a>
-        </div>
-        <div style={{marginBottom: 80, fontSize: '0.875rem', color: '#e8eaed'}}>
-          Not your computer? Use Guest mode to sign in privately.{' '}
-          <a href="#" className='learnmore' style={linkStyle}>Learn more about using Guest mode</a>
-        </div>
         <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
-          <button className='crtacc'><Link to='/NameAsk' style={link2Style}>Create account</Link></button>
-          <Link className='button' to='/VerifyPassword' style={buttonStyle}>Next</Link>
+          <Link to='/NameAsk' className='learnmore'style={link2Style}>Forgot Password?</Link>
+          <Link className='button' to='/SucceedLogAcc' style={buttonStyle}>Next</Link>
         </div>
       </div>
       <div style={footerStyle}>

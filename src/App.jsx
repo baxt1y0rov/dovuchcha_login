@@ -8,6 +8,8 @@ import BasicAsk from './Pages/BasicAsk';
 import EmailAsk from './Pages/EmailAsk';
 import PasswordAsk from './Pages/PasswordAsk';
 import SucceedAcc from './Pages/SucceedAcc';
+import VerifyPassword from './Pages/VerifyPassword';
+import SucceedLogAcc from './Pages/SucceedLogAcc';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -21,6 +23,8 @@ function App() {
         <Route path="/EmailAsk" element={<EmailAsk/>} />{}
         <Route path="/PasswordAsk" element={<PasswordAsk/>} />{}
         <Route path="/SucceedAcc" element={<SucceedAcc/>} />{}
+        <Route path="/VerifyPassword" element={<VerifyPassword/>} />{}
+        <Route path="/SucceedLogAcc" element={<SucceedLogAcc/>} />{}
 
       </Routes>
       
